@@ -48,7 +48,7 @@ function Card({ foodData }) {
     //   let finalPrice = qty * parseInt(data.price[size]);
 
     return (
-        <div className="box">
+        <div className="box" key={id}>
             <div className="w-80 rounded-lg bg-white overflow-hidden dark:bg-black border-gradient">
                 <Link href={{ pathname: "/Item/[item]" }}>
                     <div className="relative w-full h-80">

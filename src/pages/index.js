@@ -31,7 +31,7 @@ export default function Home() {
       {
         CategoryArray.map((category) => {
           return (
-            <div className="container mx-auto">
+            <div key={category}  className="container mx-auto">
               <div key={category} className="text-4xl mt-10 mb-3 uppercase font-bold">
                 {category}
               </div>
